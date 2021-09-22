@@ -1,0 +1,17 @@
+- users
+    - id:integer
+    - name:string
+    - email:string
+    - avater:text
+    - encrypted_password:string
+    - admin:boolean
+- questions
+    - id:integer
+    - title:string
+    - body:text
+    - user_id:integer
+    - solved:boolean
+- answers
+    - id:integer
+    - user_id:integer
+    - question_id:integer
