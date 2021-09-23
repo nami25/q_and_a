@@ -1,17 +1,18 @@
 - users
-    - id:integer
+    - id:bigint
     - name:string
     - email:string
-    - avater:text
+    - avater:string
     - encrypted_password:string
     - admin:boolean
 - questions
-    - id:integer
+    - id:bigint
     - title:string
     - body:text
-    - user_id:integer
+    - user_id:bigint
     - solved:boolean
 - answers
-    - id:integer
-    - user_id:integer
-    - question_id:integer
+    - id:bigint
+    - body:text
+    - user_id:bigint
+    - question_id:bigint
