@@ -1,0 +1,18 @@
+- users
+    - id:bigint
+    - name:string
+    - email:string
+    - avater:string
+    - encrypted_password:string
+    - admin:boolean
+- questions
+    - id:bigint
+    - title:string
+    - body:text
+    - user_id:bigint
+    - solved:boolean
+- answers
+    - id:bigint
+    - body:text
+    - user_id:bigint
+    - question_id:bigint
